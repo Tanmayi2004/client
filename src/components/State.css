@@ -1,0 +1,44 @@
+.state-container {
+    display: flex;
+}
+
+.menu-bar {
+    width: 200px;
+    height:100%;
+    background-color: #f2f2f2;
+    padding: 10px;
+    padding-top: 30px; 
+    position: fixed;
+    left: 0;
+    
+}
+
+.menu-bar h2 {
+    text-align: center;
+}
+
+.state-list {
+    overflow-y: auto;
+    max-height: calc(100vh - 350px);
+}
+
+.state-item {
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Adjusted border thickness */
+}
+
+.state-item:hover {
+    background-color: #ddd;
+}
+
+.state-content {
+    position: absolute;
+    right: 0;
+    width: calc(100% - 200px); /* Adjusted width to accommodate the menu bar */
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
